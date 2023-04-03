@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-radius: 35px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Tp6Controller">
+   <top>
+      <HBox prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: DODGERBLUE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="nomGrilleLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="250.0" text="Nom_Grille" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+               <HBox.margin>
+                  <Insets top="23.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Separator orientation="VERTICAL" prefHeight="77.0" prefWidth="208.0" visible="false" />
+            <Button fx:id="Menu" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#MenuButton" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: lime;" text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+	   <GridPane fx:id="grilleMC" gridLinesVisible="true" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+		<children>
+            <TextField prefHeight="40.0" prefWidth="40.0" />
+            <TextField prefHeight="40.0" prefWidth="40.0" GridPane.rowIndex="1" />
+            <TextField prefHeight="40.0" prefWidth="40.0" GridPane.columnIndex="1" />
+				<!--  case laissée noire par omission du TextField :
+				        <TextField prefHeight="40.0" prefWidth="40.0"
+				        		GridPane.columnIndex="1" GridPane.rowIndex="1" />
+				-->
+			 <TextField prefHeight="40.0" prefWidth="40.0" GridPane.columnIndex="2" />
+            <TextField prefHeight="40.0" prefWidth="40.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+		</children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+	   </GridPane>
+   </bottom>
+</BorderPane>
